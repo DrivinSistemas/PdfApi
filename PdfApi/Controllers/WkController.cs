@@ -1,3 +1,4 @@
+using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Razor.Language.Extensions;
 using PdfApi.Shared;
@@ -71,8 +72,8 @@ public class WkController : ControllerBase
             return base.BadRequest("Erro crítico: não foi possível gerar o PDF.");
         }
     }
-    [HttpGet]
-    public async Task<IActionResult> Get()
+    [HttpGet("{url}")]
+    public async Task<IActionResult> Get(string url)
     {
         try
         {
@@ -101,8 +102,10 @@ public class WkController : ControllerBase
                 FooterLine = true
             };
 
+
+
             _generator.SetConvertOptions(convertOptions);
-            var pdf = await _generator.GetPdf(new Uri("https://google.com"));
+            var pdf = await _generator.GetPdf(new Uri(url));
             if (pdf == null)
                 return BadRequest("Erro ao gerar o PDF.");
 

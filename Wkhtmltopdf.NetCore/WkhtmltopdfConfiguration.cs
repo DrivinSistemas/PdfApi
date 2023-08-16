@@ -36,6 +36,7 @@ namespace Wkhtmltopdf.NetCore
             services.TryAddSingleton<IRazorViewEngine, RazorViewEngine>();
             services.AddMvc().AddRazorRuntimeCompilation(options => options.FileProviders.Add(fileProvider))
                 .SetCompatibilityVersion(CompatibilityVersion.Latest);
+
             services.TryAddTransient<IRazorViewToStringRenderer, RazorViewToStringRenderer>();
             services.TryAddTransient<IGeneratePdf, GeneratePdf>();
 
