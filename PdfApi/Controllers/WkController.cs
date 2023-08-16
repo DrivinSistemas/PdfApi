@@ -72,8 +72,8 @@ public class WkController : ControllerBase
             return base.BadRequest("Erro crítico: não foi possível gerar o PDF.");
         }
     }
-    [HttpGet("{url}")]
-    public async Task<IActionResult> Get(string url)
+    [HttpGet()]
+    public async Task<IActionResult> Get([FromQuery] string url)
     {
         try
         {
