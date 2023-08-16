@@ -5,11 +5,11 @@ VisualStudioVersion = 17.0.31919.166
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Wkhtmltopdf.NetCore", "Wkhtmltopdf.NetCore\Wkhtmltopdf.NetCore.csproj", "{AD64E16D-A86E-47AD-8DEF-0B1346A5E30D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfApi", "PdfApi\PdfApi.csproj", "{56BC61DF-7849-4BCB-9D83-827650041F30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfApi", "PdfApi\PdfApi.csproj", "{56BC61DF-7849-4BCB-9D83-827650041F30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfApi.Client", "PdfApi.Client\PdfApi.Client.csproj", "{29E472AB-02F4-470E-B78F-6C5868C3A1DE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfApi.Client", "PdfApi.Client\PdfApi.Client.csproj", "{29E472AB-02F4-470E-B78F-6C5868C3A1DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfApi.Shared", "PdfApi.Shared\PdfApi.Shared.csproj", "{9BE46FD9-609A-4BC3-B8A3-820D4EB61B21}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PdfApi.Shared", "PdfApi.Shared\PdfApi.Shared.csproj", "{9BE46FD9-609A-4BC3-B8A3-820D4EB61B21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

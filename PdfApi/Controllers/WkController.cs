@@ -102,9 +102,9 @@ public class WkController : ControllerBase
             };
 
             _generator.SetConvertOptions(convertOptions);
-            var pdf = await _generator.GetPdf(new Uri("https://painel.teorico.com.br/Classes/presenceData/2e337e88-7587-4a70-8adb-0a7b7988be80?key=pdfExportInternalOnlyChangeThisLater&offset=0"));
+            var pdf = await _generator.GetPdf(new Uri("https://google.com"));
             if (pdf == null)
-                return BadRequest("Não foi possível gerar o PDF.");
+                return BadRequest("Erro ao gerar o PDF.");
 
             return pdf;
         }
