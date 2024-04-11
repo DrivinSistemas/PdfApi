@@ -5,6 +5,8 @@
     <AssemblyVersion>5.0.2.0</AssemblyVersion>
     <FileVersion>5.0.2.0</FileVersion>
     <Version>5.0.2-preview</Version>
+	  <ServerGarbageCollection>true</ServerGarbageCollection>
+	  <GarbageCollectionAdapatationMode>1</GarbageCollectionAdapatationMode>
     <Description>This project implements the library wkhtmltopdf for asp net core and a view engine, working in windows, macos, linux and docker.
 
 For more information about how to use it, go to https://github.com/fpanaccia/Wkhtmltopdf.NetCore.Example</Description>
