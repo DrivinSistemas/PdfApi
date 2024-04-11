@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 RUN apt-get update && apt-get install -y --allow-unauthenticated apt-utils libgdiplus libc6-dev libx11-dev
 RUN ln -s /usr/lib/libgdiplus.so/usr/lib/gdiplus.dll
 RUN apt update -y && apt install wkhtmltopdf -y
@@ -7,7 +7,7 @@ WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
 WORKDIR /src
 COPY . .
