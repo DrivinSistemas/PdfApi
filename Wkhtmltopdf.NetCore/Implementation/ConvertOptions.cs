@@ -63,6 +63,11 @@ namespace Wkhtmltopdf.NetCore
         [OptionFlag("-l")]
         public bool IsLowQuality { get; set; }
 
+        [OptionFlag("--enable-javascript")]
+        public bool EnableJavascript { get; set; }
+
+        [OptionFlag("--javascript-delay")]
+        public int? JavascriptDelay { get; set; }
 
         /// <summary>
         /// Number of copies to print into the PDF file.

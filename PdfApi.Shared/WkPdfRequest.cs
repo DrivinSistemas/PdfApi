@@ -44,6 +44,9 @@ public class WkPdfRequest
     /// </summary>
     public bool EnableForms { get; set; }
 
+    public bool EnableJavascript { get; set; }
+
+    public int? JavascriptDelay { get; set; }
     /// <summary>
     /// Indicates whether the PDF should be generated in lower quality.
     /// </summary>

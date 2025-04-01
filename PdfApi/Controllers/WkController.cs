@@ -39,6 +39,8 @@ public class WkController : ControllerBase
                 EnableForms = request.EnableForms,
                 IsLowQuality = request.IsLowQuality,
                 Copies = request.Copies,
+                EnableJavascript = request.EnableJavascript,
+                JavascriptDelay = request.JavascriptDelay,
                 ImageDpi = request.ImageDpi,
                 ImageQuality = request.ImageQuality,
                 Dpi = request.Dpi,
