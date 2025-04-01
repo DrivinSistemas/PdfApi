@@ -45,6 +45,7 @@ public class WkPdfRequest
     public bool EnableForms { get; set; }
 
     public bool EnableJavascript { get; set; }
+    public bool NoStopSlowScripts { get; set; }
 
     public int? JavascriptDelay { get; set; }
     /// <summary>

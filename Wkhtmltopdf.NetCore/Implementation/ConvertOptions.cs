@@ -69,6 +69,10 @@ namespace Wkhtmltopdf.NetCore
         [OptionFlag("--javascript-delay")]
         public int? JavascriptDelay { get; set; }
 
+        [OptionFlag("--no-stop-slow-scripts")]
+        public bool NoStopSlowScripts { get; set; }
+
+
         /// <summary>
         /// Number of copies to print into the PDF file.
         /// </summary>
